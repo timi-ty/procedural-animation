@@ -60,7 +60,7 @@ public class IKInsectController : MonoBehaviour
     {
         //The commented out code below was to enable me record the steps for the video
         //It simply moves the feet with the debugTime slider.
-        //Comment out TestMove() in start and then uncomment the code below to test it.
+        //Disable the NavAgent and then uncomment the code below to test it.
 
         //for (int i = 2; i < footIKTargets.Count; i++)
         //{
@@ -103,7 +103,7 @@ public class IKInsectController : MonoBehaviour
         {
             float stepDuration = 1 / stepsPerSecond;
 
-            moveRoutine = StartCoroutine(MoveForward(stepDuration)); //this coroutine to take the first steps. It calls itslef recursively to maintain the motion.
+            moveRoutine = StartCoroutine(MoveForward(stepDuration)); //this is the coroutine to take the first steps. It calls itslef recursively to maintain the motion.
 
             isMoving = true;
         }
