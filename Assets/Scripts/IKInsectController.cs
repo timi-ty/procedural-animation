@@ -70,10 +70,10 @@ public class IKInsectController : MonoBehaviour
         //        debugSphere[i].position = footIKTargets[i].position;
         //    }
         //}
-        //MoveLimb(0, debugTime);
-        //MoveLimb(1, debugTime);
-        ////MoveLimb(2, debugTime);
-        ////MoveLimb(3, debugTime);
+        //MoveFoot(0, debugTime);
+        //MoveFoot(1, debugTime);
+        ////MoveFoot(2, debugTime);
+        ////MoveFoot(3, debugTime);
     }
 
     //***//this function can recieve any direction (ignores y component) to tell the insect to try to move in that direction.
